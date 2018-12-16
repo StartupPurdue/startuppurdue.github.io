@@ -1,0 +1,59 @@
+.header-button {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.btn-header {
+  width: 200px;
+}
+
+.footer {
+  background: #2d3436;
+  padding: 25px;
+}
+
+.footer-nav-items {
+  text-decoration: none;
+  float: right;
+  margin-top: 5px;
+}
+
+.footer-nav-item {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer-nav-item a {
+  color: white;
+}
+
+.footer-nav-logo {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-nav-logo a {
+  color: white;
+}
+
+.copyright {
+  display: inline-block;
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.nav-right {
+  margin-top: 5px;
+}
+
+.colorlib-counters .colorlib-counter {
+  color: black;
+}
