@@ -1,11 +1,5 @@
-let communityLink = document.getElementById("organizations");
 let joinCommunity = document.getElementById("join-community");
 let startStartup = document.getElementById("start-button");
-
-communityLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  scrollToCommunity();
-})
 
 joinCommunity.addEventListener("click", (e) => {
   e.preventDefault();
