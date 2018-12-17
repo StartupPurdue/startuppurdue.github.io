@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5, h6, figure {
     display: inline-block; }
     .services .icon i {
       font-size: 50px;
-      color: #798eea;
+      color: #ffcc00;
       z-index: 1; }
   .services .desc h3 {
     font-size: 26px;
@@ -1488,5 +1488,5 @@ input[type="text"] {
 
 .dropdown-divider {
   height: 5px;
-  
+
 }

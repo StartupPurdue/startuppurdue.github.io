@@ -1,3 +1,7 @@
+body {
+  background: #2d3436;
+  color: white;
+}
 .header-button {
   display: inline-block;
   margin-right: 5px;
@@ -56,4 +60,72 @@
 
 .colorlib-counters .colorlib-counter {
   color: black;
+}
+
+.info-card {
+  background: #ffcc00;
+  padding: 2em 1em 1em 1em;
+  -webkit-box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; 
+
+  background-clip: padding-box;
+  border: 10px solid #2d3436;
+  color: black;
+}
+
+.info-card .info-card-heading {
+  margin-bottom: 30px; 
+}
+
+.info-card .info {
+  font-size: 72px;
+  color: white;
+  line-height: 50px;
+  font-weight: 300; 
+}
+
+.orgs .icon i {
+  color: black !important;
+}
+
+i {
+  /*color: black !important;*/
+}
+
+.info-card h3 {
+  /*color: white;*/
+}
+
+.info-card .info .currency {
+  font-size: 30px;
+  top: -0.9em;
+  padding-right: 10px; 
+}
+
+.info-card .info small {
+  font-size: 13px;
+  display: block;
+  /*color: #white; */
+}
+
+.white-text {
+  color: white;
+}
+
+.colorlib-intro {
+  background: #2d3436;
+}
+
+.custom-hr {
+  width: 90%;
+  opacity: 0.5;
 }
