@@ -230,6 +230,10 @@ a, a:hover {
   float: right;
 }
 
+a:focus {
+  color: black;
+}
+
 @media screen and (max-width: 768px) {
   .subheading {
     font-size: 2rem !important;
