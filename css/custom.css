@@ -1,6 +1,7 @@
 body {
   background: #2d3436;
   color: white;
+  scroll-behavior: smooth;
 }
 .header-button {
   display: inline-block;
@@ -13,7 +14,7 @@ body {
 }
 
 .footer {
-  background: #2d3436;
+  background: #1f2425;
   padding: 25px;
 }
 
@@ -80,7 +81,9 @@ body {
   background-clip: padding-box;
   border: 10px solid #2d3436;
   color: black;
-}
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;}
 
 .info-card .info-card-heading {
   margin-bottom: 30px; 
@@ -95,6 +98,10 @@ body {
 
 .orgs .icon i {
   color: black !important;
+}
+
+.icon-arrow-up2 {
+  color: #ffcc00 ;
 }
 
 i {
@@ -128,4 +135,30 @@ i {
 .custom-hr {
   width: 90%;
   opacity: 0.5;
+}
+
+.info-card:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.info-card .orgs {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.info-card .orgs:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+a, a:hover {
+  color: black;
+}
+
+.events-header {
+  margin-top: 75px;
 }

@@ -271,6 +271,4 @@
 		owlCrouselFeatureSlide();
 		bgVideo();
 	});
-
-
 }());
