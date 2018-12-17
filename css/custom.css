@@ -96,6 +96,35 @@ body {
   font-weight: 300; 
 }
 
+.startup-card {
+  background: #fff;
+  padding: 2em 1em 1em 1em;
+  -webkit-box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; 
+
+  background-clip: padding-box;
+  border: 15px solid #2d3436;
+  color: black;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 600px;
+}
+
+.startup-card .startup-card-heading {
+  margin-bottom: 30px; 
+}
+
+
 .orgs .icon i {
   color: black !important;
 }
@@ -161,4 +190,42 @@ a, a:hover {
 
 .events-header {
   margin-top: 75px;
+}
+
+.footer-nav-logo a:hover {
+  color: white;
+}
+
+::selection {
+  background: #ffcc00; /* WebKit/Blink Browsers */
+}
+
+.info-startup {
+  background: #fff;
+}
+
+#search {
+  margin-bottom: 25px;
+}
+
+.filter-button {
+  width: 120px !important;
+  padding: 15px 20px;
+  color: black;
+  background: #ffcc00 !important;
+}
+
+.btn-group .active {
+  background: #caa309;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-group .filter-button:hover {
+  color: black;
+  background: #caa309;
+}
+
+.filter-button-right {
+  float: right;
 }

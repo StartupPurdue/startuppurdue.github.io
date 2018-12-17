@@ -69,7 +69,7 @@
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li class="has-dropdown">
-                  <a href="#community" id="organizations">Organizations</a>
+                  <a href="index.html#community" id="organizations">Organizations</a>
                   <ul class="dropdown">
                     <li><a href="http://dmkalpha.com">Delta Mu Kappa</a></li>
                     <li><a href="http://anvilstartups.com">The Anvil</a></li>
@@ -99,22 +99,36 @@
 
     <div class="colorlib-intro" id="community">
       <div class="container">
+
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-            <h2 class="white-text events-header">Upcoming Events</h2>
+            <h2 class="white-text events-header">Startup List</h2>
+            <p>A list of all startups that have come out of Purdue University</p>
           </div>
         </div>
-        <iframe 
-          frameborder="0" 
-          width="100%"
-          height="600px"
-          data-inffuse-app="calendar_dev"
-          data-inffuse-user="104594369"
-          data-inffuse-site="305450376951531175"
-          data-inffuse-project="e1a6c99f-2ab9-4463-a6c8-11e22cb56f47"
-          src="https://inffuse-calendar2.appspot.com/widget.html?inffuse-platform=weebly&inffuse-user=104594369&inffuse-site=305450376951531175&inffuse-project=e1a6c99f-2ab9-4463-a6c8-11e22cb56f47"
-          >
-        </iframe>
+        
+        <div class="row search-fields">
+          
+          <div class="col-md-12">
+            <input type="text" class="form-control input-lg" id="search" placeholder="Search for a startup" />
+          </div>
+          
+        </div>
+        <div class="row" id="startup-container">
+         <!--  <div class="col-md-4 text-center animate-box info-card info-startup">
+            <a href="startup-link">
+              <div class="services orgs">
+                <span class="icon">
+                  <img src="startup-image">
+                </span>
+                <div class="desc">
+                  <h3>Startup Name</h3>
+                  <p>Startup Description</p>
+                </div>
+              </div>
+            </a>
+          </div> -->
+        </div>
       </div>
     </div>
     
@@ -169,7 +183,7 @@
   <!-- Main -->
   <script src="js/main.js"></script>
 
-  <script src="js/custom.js"></script>
+  <script src="js/startups.js"></script>
 
   </body>
 </html>
