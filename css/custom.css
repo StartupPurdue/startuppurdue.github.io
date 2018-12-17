@@ -229,3 +229,9 @@ a, a:hover {
 .filter-button-right {
   float: right;
 }
+
+@media screen and (max-width: 768px) {
+  .subheading {
+    font-size: 2rem !important;
+  }
+}
