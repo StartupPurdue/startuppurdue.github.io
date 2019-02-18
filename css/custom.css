@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Avenir Next";
+    src:url("fonts/AvenirNext-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Avenir Next";
+    src:url("fonts/AvenirNext-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Avenir Next";
+    src:url("fonts/AvenirNext-Heavy.ttf");
+}
+
+@font-face {
+    font-family: "Avenir Next";
+    src:url("fonts/AvenirNext-Bold.ttf");
+    font-weight: 600;
+}
+
 body {
   background: #2d3436;
   color: white;
@@ -7,7 +28,7 @@ body {
 }
 
 h1, h2, h3, p, a, .subheading {
-  font-family: "Avenir Next" !important;
+  font-family: "Avenir Next", sans-serif !important;
 }
 
 h2, h3 {
