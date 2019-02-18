@@ -327,6 +327,33 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 990px) {
+  .colorlib-nav-toggle {
+    margin-top: 12px;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 513px) {
+  .btn-header {
+    width: 100%;
+    /*display: block;*/
+  }
+
+  .header-button {
+    display: block;
+  }
+
+  .video-hero .display-tc h2 {
+    font-size: 4rem;
+  }
+
+  .video-hero .display-tc p {
+    font-size: 2.5rem !important;
+  }
+}
+
 .more-info {
   font-weight: bold;
 }
