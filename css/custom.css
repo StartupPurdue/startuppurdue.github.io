@@ -3,14 +3,37 @@ body {
   color: white;
   scroll-behavior: smooth;
 }
+
+h1, h2, h3, p, a, .subheading {
+  font-family: "Avenir Next" !important;
+}
+
+h2, h3 {
+/*  text-transform: uppercase;
+*/  
+  font-weight: 600 !important;
+}
+
+#colorlib-logo a {
+  font-style: italic;
+}
+
+.video-hero .display-tc p {
+  font-weight: normal;
+}
+
 .header-button {
   display: inline-block;
   margin-right: 5px;
   margin-left: 5px;
 }
 
+.btn {
+  font-weight: normal;
+}
+
 .btn-header {
-  width: 200px;
+  width: 225px;
 }
 
 .footer {
@@ -56,7 +79,7 @@ body {
 }
 
 .nav-right {
-  margin-top: 5px;
+  margin-top: 12px;
 }
 
 .colorlib-counters .colorlib-counter {
