@@ -2,6 +2,8 @@ body {
   background: #2d3436;
   color: white;
   scroll-behavior: smooth;
+  line-height: normal;
+  text-align: left;
 }
 
 h1, h2, h3, p, a, .subheading {
@@ -20,6 +22,16 @@ h2, h3 {
 
 .video-hero .display-tc p {
   font-weight: normal;
+  text-align: left;
+}
+
+.video-hero .display-tc h2 {
+  margin-bottom: 5px;
+    text-align: left;
+}
+
+.row {
+  text-align: left;
 }
 
 .header-button {
@@ -100,11 +112,12 @@ h2, h3 {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px; 
-  min-height: 450px;
+  min-height: 380px;
   background-clip: padding-box;
   border: 10px solid #2d3436;
   color: black;
   -moz-transition: all 0.3s;
+  /*text-align: left;*/
   -webkit-transition: all 0.3s;
   transition: all 0.3s;}
 
