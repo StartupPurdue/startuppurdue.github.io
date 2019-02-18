@@ -329,8 +329,12 @@ a:focus {
 
 @media screen and (max-width: 990px) {
   .colorlib-nav-toggle {
-    margin-top: 12px;
+    margin-top: 5px;
     display: block;
+  }
+
+  #colorlib-logo a img {
+    height: 35px;
   }
 }
 
