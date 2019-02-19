@@ -380,7 +380,7 @@ a:focus {
 .hover-magnify:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1); 
-  font-family: bold;
+  /*font-family: bold;*/
   transition: all 0.1s;
   cursor: pointer;
 }
