@@ -13,6 +13,26 @@ window.onload = () => {
       date: "December 2nd, 2018",
       link: "mimir-job-posting"
     },
+    { 
+      company: "Mimir", 
+      company_description: "Mimir Classroom provides the tools for instructors to efficiently teach Computer Science courses of any scale without compromising quality of education for students.",
+      image: "https://pbs.twimg.com/profile_images/720662602599129088/F20WzdeB_400x400.jpg",
+      job_title: "Software Engineer Intern - W '19",
+      majors: "Computer Science, Computer Engineering, Electrical Engineering",
+      application_link: "http://google.com",
+      date: "December 2nd, 2018",
+      link: "mimir-job-posting"
+    },
+    { 
+      company: "Mimir", 
+      company_description: "Mimir Classroom provides the tools for instructors to efficiently teach Computer Science courses of any scale without compromising quality of education for students.",
+      image: "https://pbs.twimg.com/profile_images/720662602599129088/F20WzdeB_400x400.jpg",
+      job_title: "Software Engineer Intern - W '19",
+      majors: "Computer Science, Computer Engineering, Electrical Engineering",
+      application_link: "http://google.com",
+      date: "December 2nd, 2018",
+      link: "mimir-job-posting"
+    },
   ]
 
   let jobElement = document.createElement("div");
@@ -40,7 +60,7 @@ window.onload = () => {
 
     jobs.forEach(job => {
       jobElement = document.createElement("div");
-      jobElement.setAttribute("class", "col-md-4 text-center job-card");
+      jobElement.setAttribute("class", "col col-md-4 text-center job-card");
       jobElement.innerHTML = jobText;
 
       jobElement.innerHTML = jobElement.innerHTML.replace("job-link", job.link);

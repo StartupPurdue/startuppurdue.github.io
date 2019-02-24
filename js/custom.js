@@ -23,13 +23,13 @@ const scrollToStartup = () => {
   }, 500);
 }
 
-$(document).ready(function() {
-    $(window).scroll(function() {
+// $(document).ready(function() {
+//     $(window).scroll(function() {
 
-    if($(this).scrollTop() > 150) { 
-        $('.colorlib-nav').addClass('solid');
-    } else {
-        $('.colorlib-nav').removeClass('solid');
-    }
-  });
-});
+//     if($(this).scrollTop() > 150) { 
+//         $('.colorlib-nav').addClass('solid');
+//     } else {
+//         $('.colorlib-nav').removeClass('solid');
+//     }
+//   });
+// });

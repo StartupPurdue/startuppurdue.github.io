@@ -83,11 +83,16 @@ h2, h3 {
 }
 
 .colorlib-nav {
-  position: fixed;
+  /*position: fixed;*/
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .solid {
   background: #1f2424;
+  opacity: 0.95;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -123,6 +128,15 @@ h2, h3 {
 
 .footer-nav-logo a {
   color: white;
+}
+
+.community, .ecosystem {
+  padding: 7em 0;
+  clear: both;
+}
+
+.ecosystem {
+  margin-top: 50px;
 }
 
 .copyright {
@@ -314,6 +328,43 @@ a, a:hover {
 
 #search {
   margin-bottom: 25px;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  color: white;
+  border-right: none;
+  font-size: 2rem !important;
+}
+
+.startups-header {
+  margin-top: 75px;
+  font-size: 5.5rem !important;
+  margin-bottom: 15px !important;
+}
+
+.submission-link {
+  color: white;
+  font-weight: 600;
+  /*text-decoration: underline;*/
+}
+
+.submission-link:visited {
+  color: white;
+  font-weight: 600;
+}
+
+.submission-link:focused {
+  color: white;
+  font-weight: 600;
+}
+
+.submission-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.startups-subheader {
+  font-size: 2rem;
 }
 
 .filter-button {
