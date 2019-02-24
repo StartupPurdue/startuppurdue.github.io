@@ -22,3 +22,14 @@ const scrollToStartup = () => {
     scrollTop: $("#start").offset().top
   }, 500);
 }
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+
+    if($(this).scrollTop() > 150) { 
+        $('.colorlib-nav').addClass('solid');
+    } else {
+        $('.colorlib-nav').removeClass('solid');
+    }
+  });
+});

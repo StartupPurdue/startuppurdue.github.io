@@ -37,7 +37,6 @@ window.onload = () => {
           <div class="desc">
             <h3>startup-name</h3>
             <p>startup-description</p>
-            <p>startup-founders</p>
           </div>
         </div>
       </a>
@@ -55,7 +54,6 @@ window.onload = () => {
       startupElement.innerHTML = startupElement.innerHTML.replace("startup-image", startup.image);
       startupElement.innerHTML = startupElement.innerHTML.replace("startup-name", startup.name);
       startupElement.innerHTML = startupElement.innerHTML.replace("startup-description", startup.description);
-      startupElement.innerHTML = startupElement.innerHTML.replace("startup-founders", startup.founders);
 
       startupContainer.appendChild(startupElement);
     })
