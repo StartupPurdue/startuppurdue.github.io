@@ -77,6 +77,29 @@ h2, h3 {
   padding: 25px;
 }
 
+.footer-icons {
+  text-align: center;
+}
+
+.footer-icons i {
+  margin: 0px 3px;
+}
+
+.footer-icons a {
+  color: white;
+}
+
+.footer-icons a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.footer-icons a:visited {
+  color: white;
+}
+
+
+
 .colorlib-nav {
   /*position: fixed;*/
   -webkit-transition: all 0.3s linear;

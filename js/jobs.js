@@ -6,33 +6,13 @@ window.onload = () => {
     { 
       company: "Mimir", 
       company_description: "Mimir Classroom provides the tools for instructors to efficiently teach Computer Science courses of any scale without compromising quality of education for students.",
-      image: "https://pbs.twimg.com/profile_images/720662602599129088/F20WzdeB_400x400.jpg",
+      image: "https://media.licdn.com/dms/image/C4E0BAQGP0AkapCt8qA/company-logo_400_400/0?e=1553126400&v=beta&t=YG9LSpZfHRgqZ1xfDJkzr4D3udM-sIsz67zXxtsXiJk",
       job_title: "Software Engineer Intern - W '19",
       majors: "Computer Science, Computer Engineering, Electrical Engineering",
       application_link: "http://google.com",
       date: "December 2nd, 2019",
       link: "mimir-job-posting"
-    },
-    { 
-      company: "Mimir", 
-      company_description: "Mimir Classroom provides the tools for instructors to efficiently teach Computer Science courses of any scale without compromising quality of education for students.",
-      image: "https://pbs.twimg.com/profile_images/720662602599129088/F20WzdeB_400x400.jpg",
-      job_title: "Software Engineer Intern - W '19",
-      majors: "Computer Science, Computer Engineering, Electrical Engineering",
-      application_link: "http://google.com",
-      date: "December 2nd, 2019",
-      link: "mimir-job-posting"
-    },
-    { 
-      company: "Mimir", 
-      company_description: "Mimir Classroom provides the tools for instructors to efficiently teach Computer Science courses of any scale without compromising quality of education for students.",
-      image: "https://pbs.twimg.com/profile_images/720662602599129088/F20WzdeB_400x400.jpg",
-      job_title: "Software Engineer Intern - W '19",
-      majors: "Computer Science, Computer Engineering, Electrical Engineering",
-      application_link: "http://google.com",
-      date: "December 2nd, 2019",
-      link: "mimir-job-posting"
-    },
+    }
   ]
 
   let jobElement = document.createElement("div");

@@ -10,24 +10,7 @@ window.onload = () => {
       link: "https://www.mimirhq.com/",
       founders: "Prah Veluvolu ('14)",
       industry: "EdTech"
-    },
-    { 
-      name: "Perceive", 
-      description: "We build tools to ensure that your in-store marketing strategies resonate with your target shopper.",
-      image: "https://pbs.twimg.com/profile_images/720662602599129088/F20WzdeB_400x400.jpg",
-      link: "https://www.perceiveinc.com",
-      founders: "Kyle McNulty ('16), Everett Berry ('16)",
-      industry: "EdTech"
-    },
-    { 
-      name: "Mimir", 
-      description: "Mimir Classroom provides the tools for instructors to efficiently teach Computer Science courses of any scale without compromising quality of education for students.",
-      image: "images/bdmc.jpg",
-      link: "",
-      founders: "Prah Veluvolu ('16)",
-      industry: "EdTech"
-    },
-
+    }
   ]
 
   let startupElement = document.createElement("div");
