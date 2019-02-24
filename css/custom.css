@@ -98,7 +98,20 @@ h2, h3 {
   color: white;
 }
 
+.a-hover {
+  font-weight: bold;
+  color: #ffcc00 !important;
+}
 
+.a-hover:hover {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+.a-hover:vistied {
+  color: white;
+}
 
 .colorlib-nav {
   /*position: fixed;*/
