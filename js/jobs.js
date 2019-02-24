@@ -10,7 +10,7 @@ window.onload = () => {
       job_title: "Software Engineer Intern - W '19",
       majors: "Computer Science, Computer Engineering, Electrical Engineering",
       application_link: "http://google.com",
-      date: "December 2nd, 2018",
+      date: "December 2nd, 2019",
       link: "mimir-job-posting"
     },
     { 
@@ -20,7 +20,7 @@ window.onload = () => {
       job_title: "Software Engineer Intern - W '19",
       majors: "Computer Science, Computer Engineering, Electrical Engineering",
       application_link: "http://google.com",
-      date: "December 2nd, 2018",
+      date: "December 2nd, 2019",
       link: "mimir-job-posting"
     },
     { 
@@ -30,7 +30,7 @@ window.onload = () => {
       job_title: "Software Engineer Intern - W '19",
       majors: "Computer Science, Computer Engineering, Electrical Engineering",
       application_link: "http://google.com",
-      date: "December 2nd, 2018",
+      date: "December 2nd, 2019",
       link: "mimir-job-posting"
     },
   ]
@@ -52,10 +52,16 @@ window.onload = () => {
   `
 
   const filterJob = (job, query) => {
-    return job.company.includes(query) || job.majors.includes(query) || job.job_title.includes(query);
+    let q = query.toLowerCase();
+    return job.company.toLowerCase().includes(q) || job.majors.toLowerCase().includes(q) || job.job_title.toLowerCase().includes(q);
   }
 
   const updateJobs = (jobs) => {
+    if(jobs.length === 0) {
+      jobContainer.innerHTML =`<h1 class="text-center white-text">No jobs found</h1>`;
+      return;
+    }
+
     jobContainer.innerHTML = "";
 
     jobs.forEach(job => {
