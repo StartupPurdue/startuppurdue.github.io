@@ -21,10 +21,11 @@ window.onload = () => {
         grad: answers[3].date.split("-")[0],
         description: answers[4].text,
         link: answers[5].url,
-        image: answers[6].file_url
+        image: "images/companies/" + answers[1].text + ".png"
       }
 
       startups.push(startup);
+      console.log(startup)
       console.log(answers)
     })
 
