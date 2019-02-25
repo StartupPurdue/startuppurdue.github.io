@@ -18,12 +18,14 @@ window.onload = () => {
         founders: answers[0].text,
         name: answers[1].text,
         industry: answers[2].text,
+        grad: answers[3].date.split("-")[0],
         description: answers[4].text,
         link: answers[5].url,
         image: answers[6].file_url
       }
 
       startups.push(startup);
+      console.log(answers)
     })
 
     updateStartups(startups);
@@ -39,7 +41,7 @@ window.onload = () => {
             <h3>startup-name</h3>
             <p><strong>startup-industry</strong></p>
             <p>startup-description</p>
-            <p>startup-founders</p>
+            <p>startup-founders (Class of grad-date)</p>
           </div>
         </div>
       </a>
@@ -65,6 +67,7 @@ window.onload = () => {
       startupElement.innerHTML = startupElement.innerHTML.replace("startup-industry", startup.industry);
       startupElement.innerHTML = startupElement.innerHTML.replace("startup-description", startup.description);
       startupElement.innerHTML = startupElement.innerHTML.replace("startup-founders", startup.founders);
+      startupElement.innerHTML = startupElement.innerHTML.replace("grad-date", startup.grad);
 
       startupContainer.appendChild(startupElement);
     })
