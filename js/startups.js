@@ -1,17 +1,35 @@
 window.onload = () => {
   const searchField = document.getElementById("search");
   const startupContainer = document.getElementById("startup-container");
+  let startups = [];
 
-  let startups = [
-    { 
-      name: "Mimir", 
-      description: "Mimir Classroom provides the tools for instructors to efficiently teach Computer Science courses of any scale without compromising quality of education for students.",
-      image: "https://media.licdn.com/dms/image/C4E0BAQGP0AkapCt8qA/company-logo_400_400/0?e=1553126400&v=beta&t=YG9LSpZfHRgqZ1xfDJkzr4D3udM-sIsz67zXxtsXiJk",
-      link: "https://www.mimirhq.com/",
-      founders: "Prah Veluvolu ('14)",
-      industry: "EdTech"
-    }
-  ]
+  fetch('https://api.typeform.com/forms/AKnZpn/responses', {
+    method: 'GET',
+    headers: { "Authorization": "Bearer 7LvnQ4CV5UjXGA62TRh9xu4GKD6RJ34cJSJm65ivRHuD" }
+  })
+  .then(response => response.json())
+  .then((response) => {
+    response.items.forEach(item => {
+      const answers = item.answers;
+
+      if(!answers) return;
+
+      let startup = {
+        founders: answers[0].text,
+        name: answers[1].text,
+        industry: answers[2].text,
+        description: answers[4].text,
+        link: answers[5].url,
+        image: answers[6].file_url
+      }
+
+      startups.push(startup);
+    })
+
+    updateStartups(startups);
+  })
+  .catch(error => console.error('Error:', error));
+
 
   let startupElement = document.createElement("div");
   let startupText = `
