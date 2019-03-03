@@ -3,68 +3,58 @@ window.onload = () => {
   const jobContainer = document.getElementById("job-container");
   let jobs = [];
 
-  // fetch('https://api.typeform.com/forms/AKnZpn/responses', {
-  //   method: 'GET',
-  //   headers: { "Authorization": "Bearer 7LvnQ4CV5UjXGA62TRh9xu4GKD6RJ34cJSJm65ivRHuD" }
-  // })
-  // .then(response => response.json())
-  // .then((response) => {
-  //   response.items.forEach(item => {
-  //     const answers = item.answers;
+  fetch('https://api.typeform.com/forms/jZzRNQ/responses', {
+    method: 'GET',
+    headers: { "Authorization": "Bearer 7LvnQ4CV5UjXGA62TRh9xu4GKD6RJ34cJSJm65ivRHuD" }
+  })
+  .then(response => response.json())
+  .then((response) => {
+    console.log(response)
+    response.items.forEach(item => {
+      const answers = item.answers;
 
-  //     if(!answers) return;
+      if(!answers) return;
 
-  //     let job = {
-  //       title: answers[0].text,
-  //       description: answers[1].text,
-  //       company: answers[2].text,
-  //       majors: answers[3].date.split("-")[0],
-  //       description: answers[4].text,
-  //       link: answers[5].url,
-  //       image: "images/companies/" + answers[1].text + ".png"
-  //     }
+      let job = {
+        company: answers[0].text,
+        companyDescription: answers[1].text,
+        majors: answers[2].text,
+        title: answers[3].text,
+        stage: answers[5].choice.label,
+        location: answers[7].text.split(",")[1] + ", " + answers[7].text.split(",")[2],
+        skills: answers[8].text,
+        link: answers[10].url,
+        image: buildFile(answers[0].text),
+        date: convertDate(item.submitted_at)
+      }
 
-  //     startups.push(startup);
-  //     console.log(startup)
-  //     console.log(answers)
-  //   })
+      jobs.push(job);
+    })
 
-  //   updateStartups(startups);
-  // })
-  // .catch(error => console.error('Error:', error));
-
-  // let jobs = [
-  //   { 
-  //     company: "Mimir", 
-  //     company_description: "Mimir Classroom provides the tools for instructors to efficiently teach Computer Science courses of any scale without compromising quality of education for students.",
-  //     image: "https://media.licdn.com/dms/image/C4E0BAQGP0AkapCt8qA/company-logo_400_400/0?e=1553126400&v=beta&t=YG9LSpZfHRgqZ1xfDJkzr4D3udM-sIsz67zXxtsXiJk",
-  //     job_title: "Software Engineer Intern - W '19",
-  //     majors: "Computer Science, Computer Engineering, Electrical Engineering",
-  //     application_link: "http://google.com",
-  //     date: "December 2nd, 2019",
-  //     link: "mimir-job-posting"
-  //   }
-  // ]
+    updateJobs(jobs);
+  })
+  .catch(error => console.error('Error:', error));
 
   let jobElement = document.createElement("div");
   let jobText = `
-        <div class="services job">
-          <span class="icon">
-            <img src="company-image" width="150px" height="150px">
-          </span>
-          <div class="desc">
-            <h3>company-name</h3>
-            <h4><strong>job-title</strong></h4>
-            <p class="job-descrip">majors</p>
-            <a class="more-info" href="jobs/job-link">Apply Now</a>
-            <p>posting-date</p>
+        <a href="job-link" class="startup-card-overlay job-posting">
+          <div class="services startup">
+            <div class="desc">
+              <h3>company-name</h3>
+              <p style="font-size: 2rem"><strong>job-title</strong></p>
+              <p>company-description</p>
+              <p><strong>Skills:</strong> job-skills</p>
+              <p><strong>Seeking:</strong> majors students</p>
+              <p><strong>Posted:</strong> posting-date</p>
+            </div>
           </div>
-        </div>
+        </a>
   `
 
   const filterJob = (job, query) => {
     let q = query.toLowerCase();
-    return job.company.toLowerCase().includes(q) || job.majors.toLowerCase().includes(q) || job.job_title.toLowerCase().includes(q);
+
+    return job.company.toLowerCase().includes(q) || job.majors.toLowerCase().includes(q) || job.title.toLowerCase().includes(q);
   }
 
   const updateJobs = (jobs) => {
@@ -77,14 +67,17 @@ window.onload = () => {
 
     jobs.forEach(job => {
       jobElement = document.createElement("div");
-      jobElement.setAttribute("class", "col col-md-4 text-center job-card");
+      jobElement.setAttribute("class", "col col-md-4 text-center startup-card job-variant");
+      jobElement.style.background = `white url(${job.image})`;
       jobElement.innerHTML = jobText;
 
       jobElement.innerHTML = jobElement.innerHTML.replace("job-link", job.link);
       jobElement.innerHTML = jobElement.innerHTML.replace("company-image", job.image);
       jobElement.innerHTML = jobElement.innerHTML.replace("company-name", job.company);
+      jobElement.innerHTML = jobElement.innerHTML.replace("company-description", job.companyDescription);
       jobElement.innerHTML = jobElement.innerHTML.replace("majors", job.majors);
-      jobElement.innerHTML = jobElement.innerHTML.replace("job-title", job.job_title);
+      jobElement.innerHTML = jobElement.innerHTML.replace("job-title", job.title);
+      jobElement.innerHTML = jobElement.innerHTML.replace("job-skills", job.skills);
       jobElement.innerHTML = jobElement.innerHTML.replace("posting-date", job.date);
 
       jobContainer.appendChild(jobElement);
@@ -102,4 +95,29 @@ window.onload = () => {
   })
 
   updateJobs(jobs);
+
+
+  const buildFile = (company) => {
+    let file = "images/companies/" + company + ".png"
+
+    if(!fileExists(file)) {
+      file = "images/purdue.png"
+    }
+
+    return file;
+  }
+
+  const fileExists = (url) => {
+    let img = new Image();
+    img.src = url;
+    return img.height != 0;
+  }
+
+  const convertDate = (dateString) => {
+    const date = new Date(dateString);
+
+    console.log(date.getMonth())
+
+    return (date.getMonth()+1) + "/" + date.getDate() + "/" + date.getFullYear();
+  }
 }

@@ -239,6 +239,10 @@ h2, h3 {
   height: 390px;
 }
 
+.job-variant {
+  height: 450px;
+}
+
 .startup-card .startup-card-heading {
   margin-bottom: 30px; 
 }
@@ -260,6 +264,10 @@ h2, h3 {
   transition: .5s ease;
   background-color: #ffcc00;
   text-align: left;
+}
+
+.job-posting {
+  opacity: 0.95;
 }
 
 .startup-card:hover .startup-card-overlay {
@@ -301,6 +309,7 @@ h2, h3 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   height: 500px;
+  text-align: left;
 }
 
 .job-card .job-card-heading {
