@@ -21,7 +21,7 @@ window.onload = () => {
         grad: answers[3].date.split("-")[0],
         description: answers[4].text,
         link: answers[5].url,
-        image: "images/companies/" + answers[1].text + ".png"
+        image: "images/companies/" + encodeURI(answers[1].text) + ".png"
       }
 
       startups.push(startup);
