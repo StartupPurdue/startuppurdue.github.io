@@ -18,9 +18,8 @@ window.onload = () => {
         founders: answers[0].text,
         name: answers[1].text,
         industry: answers[2].text,
-        grad: answers[3].date.split("-")[0],
-        description: answers[4].text,
-        link: answers[5].url,
+        description: answers[3].text,
+        link: answers[4].url,
         image: "images/companies/" + encodeURI(answers[1].text) + ".png"
       }
 
@@ -42,7 +41,7 @@ window.onload = () => {
             <h3>startup-name</h3>
             <p><strong>startup-industry</strong></p>
             <p>startup-description</p>
-            <p>startup-founders (Class of grad-date)</p>
+            <p>startup-founders</p>
           </div>
         </div>
       </a>
