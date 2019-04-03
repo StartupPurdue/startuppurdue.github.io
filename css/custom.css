@@ -414,7 +414,7 @@ a, a:hover {
 }
 
 .submission-link {
-  color: white;
+  color: #ffcc00;
   font-weight: 600;
   /*text-decoration: underline;*/
 }
@@ -425,12 +425,13 @@ a, a:hover {
 }
 
 .submission-link:focused {
-  color: white;
+  color: #ffcc00;
   font-weight: 600;
 }
 
 .submission-link:hover {
-  color: white;
+  color: #ffcc00;
+  font-weight: bold;
   text-decoration: underline;
 }
 
