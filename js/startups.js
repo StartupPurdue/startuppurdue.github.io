@@ -23,9 +23,7 @@ window.onload = () => {
         image: "images/companies/" + encodeURI(answers[1].text) + ".png"
       }
 
-      startups.push(startup);
-      console.log(startup)
-      console.log(answers)
+      startups.unshift(startup);
     })
 
     updateStartups(startups);

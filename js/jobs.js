@@ -28,7 +28,7 @@ window.onload = () => {
         date: convertDate(item.submitted_at)
       }
 
-      jobs.push(job);
+      jobs.unshift(job);
     })
 
     updateJobs(jobs);
