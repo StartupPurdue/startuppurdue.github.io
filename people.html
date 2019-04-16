@@ -36,6 +36,7 @@
   <!-- My styles    -->
   <link rel="stylesheet" href="css/custom.css">
 
+  <!-- Modernizr JS -->
   <script src="js/modernizr-2.6.2.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -69,7 +70,7 @@
                   <ul class="dropdown">
                     <li><a href="http://dmkalpha.com" target="_blank">Delta Mu Kappa</a></li>
                     <li><a href="http://anvilstartups.com" target="_blank">The Anvil</a></li>
-                    <li><a href="http://purduemstech.wixsite.com/home" target="_blank">MsTech</a></li>
+                    <li><a href="https://boilerlink.purdue.edu/organization/PurdueMsTech" target="_blank">MsTech</a></li>
                     <li><a href="http://purdue.3daystartup.org/" target="_blank">3 Day Startup</a></li>
                     <hr></hr>
                     <li><a href="https://www.purdue.edu/discoverypark/bdmce/" target="_blank">Burton D. Morgan CFE</a></li>
@@ -82,7 +83,6 @@
                 <li><a href="people.html">People</a></li>
                 <li><a href="events.html">Events</a></li>
                 <!-- <li><a href="news.html">News</a></li> -->
-
               </ul>
             </div>
           </div>
@@ -92,26 +92,42 @@
 
     <div class="colorlib-intro" id="community">
       <div class="container">
-        <div class=colorlib-heading animate-box">
-          <h2 class="white-text startups-header">Upcoming Events</h2>
-          <p class="startups-subheader">Events are pulled from the 765entrepreneurship shared event calendar. It includes events hosted by The Anvil, Purdue Foundry, Burton D. Morgan CFE, The Matchbox Coworking Studio, and more. To add event, please submit one  <a href="http://www.765entrepreneurship.com/" class="submission-link" target="_blank">here</a>.
+
+        <div class="colorlib-heading animate-box">
+          <h2 class="white-text startups-header">People</h2>
+          <p class="startups-subheader">A comprehensive list of Purdue affiliated founders, investors, and executives who have been involved with startups and entrepreneurship. If you know someone who should be on this list, <a href="https://anvilstartups1.typeform.com/to/AKnZpn" class="submission-link" target="_blank">please submit them here</a></p>
         </div>
-        <iframe 
-          frameborder="0" 
-          width="100%"
-          height="700px"
-          data-inffuse-app="calendar_dev"
-          data-inffuse-user="104594369"
-          data-inffuse-site="305450376951531175"
-          data-inffuse-project="e1a6c99f-2ab9-4463-a6c8-11e22cb56f47"
-          src="https://inffuse-calendar2.appspot.com/widget.html?inffuse-platform=weebly&inffuse-user=104594369&inffuse-site=305450376951531175&inffuse-project=e1a6c99f-2ab9-4463-a6c8-11e22cb56f47"
-          >
-        </iframe>
+        
+        <div class="row search-fields">
+          <div class="col-md-5">
+            <input type="text" class="form-control input-lg" id="search" placeholder="Search people by name, title, major, and more." />
+          </div>
+          <div class="col-md-2">
+            <select class="form-control filter-dropdown" id="company-select">
+              <option value="All companies" selected>All companies</option>
+              
+            </select>
+          </div>
+          <div class="col-md-3">
+            <select class="form-control filter-dropdown" id="major-select">
+              <option value="All majors" selected>All majors</option>
+              
+            </select>
+          </div>
+          <div class="col-md-2">
+            <select class="form-control filter-dropdown" id="grad-year-select">
+              <option value="All years" selected>All years</option>
+             
+            </select>
+          </div>
+        </div>
+        <div class="row" id="people-container">
+        </div>
       </div>
     </div>
     
 
-    <footer class="footer">
+   <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="footer-nav">
@@ -141,9 +157,9 @@
   <!-- Waypoints -->
   <script src="js/jquery.waypoints.min.js"></script>
   <!-- Main -->
+  <script src="js/paperparse.js"></script>
   <script src="js/main.js"></script>
-
-  <script src="js/custom.js"></script>
+  <script src="js/people.js"></script>
 
   </body>
 </html>

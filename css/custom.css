@@ -404,7 +404,7 @@ a, a:hover {
   border-left: none;
   color: white;
   border-right: none;
-  font-size: 2rem !important;
+  padding-left: 0px;
 }
 
 .startups-header {
@@ -466,8 +466,83 @@ a, a:hover {
   float: right;
 }
 
+
+/* People page */
+.person-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center top;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+
+.people {
+  background-color: white;
+  height: 480px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.name {
+  margin-bottom: 5px;
+}
+
+.title {
+  margin-top: 0px;
+}
+
+.remove-p-margin {
+  margin-bottom: 0px;
+}
+
+.people:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+  /*font-family: bold;*/
+  transition: all 0.7s;
+}
+
+.filter-dropdown {
+  color: white;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  padding: 0px;
+  height: 49px;
+  -webkit-appearance: none;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  background-image: url("../images/dropdown.png");
+  background-size: 7%;
+  background-repeat: none;
+}
+
+.filter-dropdown:focus.form-control:focus {
+  color: white;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  padding: 0px;
+  height: 49px;
+  -webkit-appearance: none;
+  background-position: right 50%;
+  background-image: url("../images/dropdown.png");
+  background-size: 7%;
+  background-repeat: no-repeat;
+}
+
 a:focus {
   color: black;
+}
+
+#search::placeholder {
+  opacity: 1 !important;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -476,7 +551,7 @@ a:focus {
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
   .colorlib-nav-toggle {
     margin-top: 5px;
     display: block;
@@ -484,6 +559,17 @@ a:focus {
 
   #colorlib-logo a img {
     height: 35px;
+  }
+}
+
+.colorlib-nav .menu-1 {
+  display: initial;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .colorlib-nav .menu-1 {
+    display: none;
   }
 }
 
