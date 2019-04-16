@@ -2,9 +2,69 @@ window.onload = () => {
   const searchField = document.getElementById("search");
   const peopleContainer = document.getElementById("people-container");
   let people = [
-    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg"  },
-    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg"  },
-    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "SF Bay Area"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "DC", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "NYC"  },
+    { name: "Mamoon Hamid", title: "General Partner", company: "KPCB", bio: "Mamoon Hamid is a Pakistani-American venture capitalist currently serving as a Managing Member and General Partner at the venture capital firm Kleiner Perkins.", grad: "2000", major: "Electrical Engineering", linkedin: "https://www.linkedin.com/in/mamoonha/", image: "https://dwhs7eit3h8mr.cloudfront.net/assets/images/partners/show/mamoon-hamid-2.jpg", industry: "Venture Capital", location: "Seattle"  },
   ];
 
   let results = [];
@@ -15,12 +75,14 @@ window.onload = () => {
       <a href="person-linkedin" class="people-card-overlay">
         <div class="services people">
           <div class="desc">
-            <img src="person-image" class="person-img">
+            <div class="person-header">
+              <img src="person-image" class="person-img">
+            </div>
             <h3 class="name">person-name</h3>
             <p class="title"><strong>person-title</strong></p>
+            <p class="industry">person-industry | person-location</p>
             <p>person-bio</p>
-            <p class="remove-p-margin">person-major</p>
-            <p class="remove-p-margin">person-grad</p>
+            <p class="remove-p-margin">person-major person-grad</p>
           </div>
         </div>
       </a>
@@ -29,19 +91,19 @@ window.onload = () => {
   const filterPeople = (person, query) => {
     const q = query.toLowerCase();
 
-    return person.name.toLowerCase().includes(q) || person.major.toLowerCase().includes(q) || person.company.toLowerCase().includes(q) || person.title.toLowerCase().includes(q)  || person.grad.toLowerCase().includes(q);
+    return person.name.toLowerCase().includes(q) || person.major.toLowerCase().includes(q) || person.company.toLowerCase().includes(q) || person.title.toLowerCase().includes(q)  || person.grad.toLowerCase().includes(q) || person.industry.toLowerCase().includes(q) || person.location.toLowerCase().includes(q);
   }
 
   const getCompanies = (people) => {
     return people.map(person => person.company)
   }
 
-  const getMajors = (people) => {
-    return people.map(person => person.major)
+  const getIndustries = (people) => {
+    return people.map(person => person.industry)
   }
 
-  const getGradYears = (people) => {
-    return people.map(person => person.grad)
+  const getLocations = (people) => {
+    return people.map(person => person.location)
   }
 
   const dedupe = (arrArg) => {
@@ -52,12 +114,12 @@ window.onload = () => {
 
   const updateDropdowns = () => {
     const companies = dedupe(getCompanies(results));
-    const majors = dedupe(getMajors(results));
-    const gradYears = dedupe(getGradYears(results));
+    const industries = dedupe(getIndustries(results));
+    const locations = dedupe(getLocations(results));
 
     const companySelect = document.getElementById("company-select");
-    const majorSelect = document.getElementById("major-select");
-    const gradYearSelect = document.getElementById("grad-year-select");
+    const industrySelect = document.getElementById("industry-select");
+    const locationSelect = document.getElementById("location-select");
 
     companies.forEach(company => {
       const element = document.createElement("OPTION");
@@ -67,20 +129,20 @@ window.onload = () => {
       companySelect.appendChild(element);
     })
 
-    majors.forEach(major => {
+    industries.forEach(industry => {
       const element = document.createElement("OPTION");
-      element.value = major;
-      element.innerHTML = major;
+      element.value = industry;
+      element.innerHTML = industry;
 
-      majorSelect.appendChild(element);
+      industrySelect.appendChild(element);
     })
 
-    gradYears.forEach(gradYear => {
+    locations.forEach(location => {
       const element = document.createElement("OPTION");
-      element.value = gradYear;
-      element.innerHTML = gradYear;
+      element.value = location;
+      element.innerHTML = location;
 
-      gradYearSelect.appendChild(element);
+      locationSelect.appendChild(element);
     })
   }
 
@@ -102,6 +164,8 @@ window.onload = () => {
       personElement.innerHTML = personElement.innerHTML.replace("person-image", person.image);
       personElement.innerHTML = personElement.innerHTML.replace("person-name", person.name);
       personElement.innerHTML = personElement.innerHTML.replace("person-title", person.title + " - " + person.company);
+      personElement.innerHTML = personElement.innerHTML.replace("person-industry", person.industry); 
+      personElement.innerHTML = personElement.innerHTML.replace("person-location", person.location); 
       personElement.innerHTML = personElement.innerHTML.replace("person-bio", person.bio); 
       personElement.innerHTML = personElement.innerHTML.replace("person-grad", ` (Class of ${person.grad})`);
       personElement.innerHTML = personElement.innerHTML.replace("person-major", person.major);
@@ -117,16 +181,16 @@ window.onload = () => {
 
     const query = document.getElementById("search").value;
     const selectedCompany = document.getElementById("company-select").value;
-    const selectedMajor = document.getElementById("major-select").value;
-    const selectedGradYear = document.getElementById("grad-year-select").value;
+    const selectedIndustry = document.getElementById("industry-select").value;
+    const selectedLocation = document.getElementById("location-select").value;
 
-    console.log(query, selectedCompany, selectedMajor, selectedGradYear);
+    console.log(query, selectedCompany, selectedIndustry, selectedLocation);
 
     if(query) results = results.filter(person => filterPeople(person, query));
 
     if(selectedCompany !== "All companies") results = results.filter(person => (person.company === selectedCompany));
-    if(selectedMajor !== "All majors") results = results.filter(person => (person.major === selectedMajor));
-    if(selectedGradYear !== "All years") results = results.filter(person => (person.grad === selectedGradYear));
+    if(selectedIndustry !== "All industries") results = results.filter(person => (person.industry === selectedIndustry));
+    if(selectedLocation !== "All locations") results = results.filter(person => (person.location === selectedLocation));
 
     console.log(results);
 
@@ -134,8 +198,8 @@ window.onload = () => {
   }
 
   const companySelect = document.getElementById("company-select");
-  const majorSelect = document.getElementById("major-select");
-  const gradYearSelect = document.getElementById("grad-year-select");
+  const industrySelect = document.getElementById("industry-select");
+  const locationSelect = document.getElementById("location-select");
 
 
   searchField.addEventListener("keyup", (e) => {
@@ -146,11 +210,11 @@ window.onload = () => {
     filter();
   })
 
-  majorSelect.addEventListener("change", (e) => {
+  industrySelect.addEventListener("change", (e) => {
     filter();
   })
 
-  gradYearSelect.addEventListener("change", (e) => {
+  locationSelect.addEventListener("change", (e) => {
     filter();
   })
 

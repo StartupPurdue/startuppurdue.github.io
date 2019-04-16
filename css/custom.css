@@ -481,9 +481,34 @@ a, a:hover {
 
 .people {
   background-color: white;
-  height: 480px;
+  height: 515px;
   padding-left: 50px;
   padding-right: 50px;
+  color: black !important;
+}
+
+.person-header {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    url(../images/background_old.jpg);
+
+  background-size: cover;
+  margin-left: -50px;
+  margin-right: -50px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+#people-container {
+  margin-top: 30px;
+}
+
+.people p {
+  font-weight: regular;
+  font-size: 1.4rem;
 }
 
 .name {
@@ -492,6 +517,14 @@ a, a:hover {
 
 .title {
   margin-top: 0px;
+  font-size: 1.6rem !important;
+  margin-bottom: 0px;
+}
+
+.industry {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 1.4rem !important;
 }
 
 .remove-p-margin {
@@ -502,7 +535,7 @@ a, a:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1); 
   /*font-family: bold;*/
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 
 .filter-dropdown {
@@ -517,7 +550,7 @@ a, a:hover {
   background-position: right 50%;
   background-repeat: no-repeat;
   background-image: url("../images/dropdown.png");
-  background-size: 7%;
+  background-size: 12px;
   background-repeat: none;
 }
 
@@ -532,7 +565,7 @@ a, a:hover {
   -webkit-appearance: none;
   background-position: right 50%;
   background-image: url("../images/dropdown.png");
-  background-size: 7%;
+  background-size: 12px;
   background-repeat: no-repeat;
 }
 
