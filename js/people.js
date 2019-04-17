@@ -95,21 +95,24 @@ window.onload = () => {
     peopleContainer.innerHTML = "";
 
     results.forEach(person => {
+      let elementText = peopleText;
+
       personElement = document.createElement("div");
       personElement.setAttribute("class", "col-md-4 text-center people-card");
       // personElement.style.background = `white url(${person.image})`;
-      personElement.innerHTML = peopleText;
 
-      personElement.innerHTML = personElement.innerHTML.replace("person-linkedin", person.linkedin);
-      personElement.innerHTML = personElement.innerHTML.replace("person-image", person.image);
-      personElement.innerHTML = personElement.innerHTML.replace("person-name", person.name);
-      personElement.innerHTML = personElement.innerHTML.replace("person-name", person.name);
-      personElement.innerHTML = personElement.innerHTML.replace("person-title", person.title + " - " + person.company);
-      personElement.innerHTML = personElement.innerHTML.replace("person-industry", person.industry); 
-      personElement.innerHTML = personElement.innerHTML.replace("person-location", person.location); 
-      personElement.innerHTML = personElement.innerHTML.replace("person-bio", person.bio); 
-      personElement.innerHTML = personElement.innerHTML.replace("person-grad", ` (Class of ${person.grad})`);
-      personElement.innerHTML = personElement.innerHTML.replace("person-major", person.major);
+      elementText = elementText.replace("person-linkedin", person.linkedin);
+      elementText = elementText.replace("person-image", person.image);
+      elementText = elementText.replace("person-name", person.name);
+      elementText = elementText.replace("person-name", person.name);
+      elementText = elementText.replace("person-title", person.title + " - " + person.company);
+      elementText = elementText.replace("person-industry", person.industry); 
+      elementText = elementText.replace("person-location", person.location); 
+      elementText = elementText.replace("person-bio", person.bio); 
+      elementText = elementText.replace("person-grad", ` (Class of ${person.grad})`);
+      elementText = elementText.replace("person-major", person.major);
+
+      personElement.innerHTML = elementText;
      
       peopleContainer.appendChild(personElement);
     })

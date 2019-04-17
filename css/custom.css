@@ -500,6 +500,7 @@ a, a:hover {
   margin-right: -30px;
   padding-bottom: 10px;
   margin-bottom: 25px;
+  border-bottom: 5px solid #ffcc00;
 }
 
 #people-container {
