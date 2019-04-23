@@ -528,6 +528,15 @@ a, a:hover {
   font-size: 1.4rem !important;
 }
 
+.bio {
+  height: 50px;
+  min-height: 75px;
+}
+
+.top {
+  height: 75px;
+}
+
 .remove-p-margin {
   margin-bottom: 0px;
 }
