@@ -52,7 +52,7 @@ window.onload = () => {
    "grad": "2005"
  },
  {
-   "name": "Michael Stoppleman",
+   "name": "Michael Stoppelman",
    "title": "Angel Investor",
    "company": "Self employed",
    "industry": "VC",
@@ -85,7 +85,7 @@ window.onload = () => {
    "grad": "1990"
  },
  {
-   "name": "Eric Zimitz",
+   "name": "Eric Zimits",
    "title": "Strategic Advisor",
    "company": "Netzyn, Inc. ",
    "industry": "VC",
@@ -239,7 +239,7 @@ window.onload = () => {
    "grad": "1990"
  },
  {
-   "name": "Rich Redalfs",
+   "name": "Rich Redelfs",
    "title": "Chairman of the Board at ACCO",
    "company": "Multiple Orgs",
    "industry": "Advisor",
@@ -294,7 +294,7 @@ window.onload = () => {
    "grad": "1999"
  },
  {
-   "name": "Alexander M.",
+   "name": "Alexander Marquez",
    "title": "Global Managing Director, Head of Experian Ventures",
    "company": "Experian",
    "industry": "VC",
@@ -371,7 +371,7 @@ window.onload = () => {
    "grad": "2008"
  },
  {
-   "name": "Pradyumn Vig",
+   "name": "Pradyuman Vig",
    "title": "CEO & Co-founder @ Abacus",
    "company": "Abacus",
    "industry": "Entrepreneur",
@@ -435,17 +435,6 @@ window.onload = () => {
    "linkedin": "http://www.linkedin.com/in/danielpalacio",
    "major": "CS",
    "grad": "2008"
- },
- {
-   "name": "Joe Schoendorf",
-   "title": "Partner at Accel Partners",
-   "company": "Accel Partners",
-   "industry": "VC",
-   "location": "Bay Area",
-   "bio": "-",
-   "linkedin": "https://www.linkedin.com/in/joe-schoendorf-0408b411/",
-   "major": "EE",
-   "grad": "1966"
  },
  {
    "name": "Beck Besecker",
@@ -558,7 +547,7 @@ window.onload = () => {
    "grad": "2007"
  },
  {
-   "name": "TA McCann",
+   "name": "T.A. McCann",
    "title": "MD@PSL",
    "company": "Pioneer Square Labs",
    "industry": "Entrepreneur",
@@ -696,8 +685,7 @@ window.onload = () => {
       // personElement.style.background = `white url(${person.image})`;
 
       elementText = elementText.replace("person-linkedin", person.linkedin);
-      elementText = elementText.replace("person-image", person.image);
-      elementText = elementText.replace("person-name", person.name);
+      elementText = elementText.replace("person-image", `images/people/${person.name}.png`);
       elementText = elementText.replace("person-name", person.name);
       elementText = elementText.replace("person-title", person.title);
       elementText = elementText.replace("person-industry", person.industry); 
