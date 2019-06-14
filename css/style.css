@@ -317,13 +317,13 @@ h1, h2, h3, h4, h5, h6, figure {
       letter-spacing: 7px; }
       .video-hero .display-tc .holder span {
         position: relative; }
-    .video-hero .display-tc h2 {
+    .video-hero .display-tc h1, h2 {
       color: #fff;
       font-size: 60px;
       margin-bottom: 20px;
       font-weight: 300; }
       @media screen and (max-width: 768px) {
-        .video-hero .display-tc h2 {
+        .video-hero .display-tc h1, h2 {
           font-size: 34px; } }
     .video-hero .display-tc p {
       font-family: "Nunito", Arial, sans-serif;
